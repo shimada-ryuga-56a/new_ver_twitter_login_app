@@ -107,6 +107,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dotenv (3.1.4)
+    dotenv-rails (3.1.4)
+      dotenv (= 3.1.4)
+      railties (>= 6.1)
     drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
@@ -175,6 +179,9 @@ GEM
       oauth
       omniauth (>= 1.0, < 3)
       rack (>= 1.6.2, < 4)
+    omniauth-rails_csrf_protection (1.0.2)
+      actionpack (>= 4.2)
+      omniauth (~> 2.0)
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
@@ -332,9 +339,11 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
+  dotenv-rails
   jbuilder
   jsbundling-rails
   omniauth
+  omniauth-rails_csrf_protection
   omniauth-twitter
   pg (~> 1.1)
   puma (>= 5.0)
